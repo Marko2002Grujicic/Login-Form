@@ -1,0 +1,39 @@
+.container {
+  background-color: #3499dd;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  height: fit-content;
+  padding: 30px 80px;
+  border-radius: 20px;
+}
+input {
+  padding: 10px;
+  background-color: #ecf0f1;
+  border: none;
+  text-align: center;
+  color: gray;
+}
+
+.submit {
+  padding: 10px;
+  background-color: #3499dd;
+  color: white;
+  border: none;
+}
+.reset {
+  text-decoration: underline;
+  border: none;
+  background-color: white;
+  color: gray;
+}
+h1 {
+  color: gray;
+}

@@ -12,6 +12,10 @@ const onChangeUsernameHandler = (event) => {
 const onChangePasswordHandler = (event) => {
     setPassword(event.target.value)
 }
+const resetForm = () =>{
+    setUsername("");
+    setPassword("");
+}
 
 const onClickHandler = () => {
     alert(`You have succesfully logged in.
@@ -26,7 +30,7 @@ And your password is : ${password}`)
                 <input type={"text"} placeholder={"username"} value={username} onChange={onChangeUsernameHandler}/>
                 <input type={"password"} placeholder={"password"} value={password} onChange={onChangePasswordHandler}/>
                 <button type="submit" onClick={onClickHandler} className="submit">login</button>
-                <button type="reset" className="reset">reset</button>
+                <button type="reset" className="reset" onClick={resetForm}>reset</button>
             </form>
         </div>
         
